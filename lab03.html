@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+     /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+
+    h1 {
+     font-family: TH Sarabun New;
+     font-size: 20px;}
+    
+  </style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-inverse">
+ <div class="jumbotron text-center">
+      <h4>Zomzom Blog</h4>
+<center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/0000009.jpg"></center><br>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar">z</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/lab03.html">Home</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58660124/887371/lab01/aboutme.html">About</a></li>
+      </ul>
+    
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+       <li><a href="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/Grid.html">การใช้งาน Grid ใน Bootstrap</a></li>
+        <li><a href="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/Form.html">การใช้งาน Form</a></li>
+
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <p> HOMEWORK </p>
+      <hr>
+      <p>ปฏิบัติการที่3: Bootstrap <br>
+        วัตถุประสงค์: 1. เพื่อให้ผู้เรียนสามารถจัดทำเว็บเพจด้วย Bootstrap ได้เครื่องมือที่ใช้ในปฏิบัติการ:<br>
+        1. ใช้โปรแกรม Visual Studio Code และ ftp-sync<br>
+        2. GitHub<br>
+        ตอนที่ 1:<br>
+        1. สร้างไดเรกทอรี่ 887371/lab03 ภายใน public_html บนเครื่อง angsila.cs.buu.ac.th ผ่านโปรแกรม Visual Studio Code <br>
+        2. ให้ศึกษา Bootstrap ที่ <a href="http://www.w3schools.com/bootstrap">http://www.w3schools.com/bootstrap</a> <br>
+        3. สร้างไฟล์ชื่อ lab03.html โดย Code ให้น ามาจาก W3Schools' Bootstrap Templates Blog:<a href="http://www.w3schools.com/bootstrap/bootstrap_templates.asp">http://www.w3schools.com/bootstrap/bootstrap_templates.asp</a><br>
+        4. ให้เขียน Blog เกี่ยวกับการใช้งาน Bootstrap ด้วยตนเอง 2 เรื่อง <br>
+        1. การใช้งาน Grid ใน Bootstrap<br>
+        2. การใช้งาน Form<br>
+        5. การจัดรูปแบบให้ใช้ Bootstrap Class ทั้งหมด<br>
+        <br>
+        <br>
+        <br>
+        <center>กำหนดส่งภายในวันที่ 10 กุมภาพันธ์ 2560 ทุกกลุ่ม</center>
+      
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p><a href="http://www.w3schools.com/bootstrap/bootstrap_templates.asp"> <button class="button button2" > w3schools </button></a></p>
+      <p><a href="http://www.w3schools.com/bootstrap/bootstrap_templates.asp"> <button class="button button2" > getbootstrap </button></a></p>
+        <p><a href="http://www.w3schools.com/bootstrap/bootstrap_templates.asp"> <button class="button button2" > cssreference </button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
