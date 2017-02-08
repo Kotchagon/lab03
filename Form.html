@@ -34,9 +34,9 @@
       }
       .row.content {height: auto;} 
     }
-	h1 {
-     font-family: TH Sarabun New;
-     font-size: 20px;}
+    h1 {
+      font-family: TH Sarabun New;
+      font-size: 20px;}
   </style>
 </head>
 <body>
@@ -76,62 +76,28 @@
     </div>
 
     <div class="col-sm-9">
-      <p><small>RECENT POSTS</small></p>
+      <h4><small>RECENT POSTS</small></h4>
       <hr>
-      <p> การใช้งาน Grid ใน Bootstrap </p>
-      <p><span class="glyphicon glyphicon-time"></span> Post by Zomzom, Feb 8, 2017.</p>
-      <p><span class="label label-danger">WORK</span></p>
-      <b><h1> Grid System </b>คืออะไร ?</h1>
+      <h2> การใช้งาน Form </h2>
       <h1>
-              การใช้งาน Bootstrap นั้น ต้องเริ่มต้นจากการสร้าง Containerและตามด้วยจัดแบ่งสัดส่วน Column
-ด้วย หลักการ Grid System<br><br>
-                <center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/0123.jpg"><br>
-               <br>
-                ซึ่งหน่วยที่เป็น 12 นี้ เราสามารถเฉลี่ยแต่ละส่วนได้ตามความต้องการ อย่างเช่นGrid System ของ Bootstrap
-ปกติแล้ว grid system ที่ Bootstrap ให้มาจะเป็ นแบบ 12 คอลัมน์ ซึ่งจะใช้ร่วมกับ container ที่เพิ่
-ง
-สร้างขึ้นมา โดยแต่ละคอลัมน์จะมีความกว้างเท่ากัน 60px และจะอยู่ห่างกัน 20px จะได้ว่า
-(60*12) + (20*11) = 940) หรือความกว้างของ containerการจะสร้าง layouts ด้วย Bootstrap ให้
-สร้าง html element ที่มี class “row” ขึ้นมาก่อนถึงจะสามารถสร้างแต่ละคอลัมน์ขึ้นมาได้ด้วยการ
-ใส่html element ที่มี class “span*” เข้าไปข้างใน โดย * ที่อยูข้างหลัง  span นั้นจะเป็นตัวเลขที่จะ
-ระบุว่า ต้องการให้คอลัมน์นี้ขนาดเท่าไร สมมติว่า จะสร้าง layouts แบบ 12 คอลัมน์ ให้ใส่โค้ด
-ดังนี้<br><br>
-                <center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/0004.jpg"><br>
-                </center><br>
-                จากโค้ดด้านบนได้ใส่ HTML elements ที่มี class ชื่อ “span1”รวมทั้งหมด 12 elements ด้วยกัน
-เมื่อพรีวิวดู container จะถูกแบ่งออกเป็นคอลัมน์ต่างๆ ที่มีความกว้างเท่ากันทั้งหมดจํานวน 12คอลัมน์ ด้วยกัน
-2 คอลัมน์
-ถ้าต้องการแบ่ง 2 คอลัมน์ และให้คอลัมน์ซ้ายใหญ่กว่าคอลัมน์ขวาดังนี้  <br><br>
-                <center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/00005.jpg"></center><br>
-              <br>
-                จะเห็นวาความกว้างของทั้ง 2 คอลัมน์นี้จะเป็น 8+4 = 12 พอดี ที่จําเป็นต้องกาหนดความกว้างให้
-รวมกันเท่ากับ 12 เพราะว่า grid system ของ bootstrap นั้นเป็นแบบ 12 แล้วเท่ากับ 2 คอลัมน์นี้จะต้องเต็ม container พอดี
-3 คอลัมน์
-ถ้าต้องการ 3 คอลัมน์ ก็กำหนดให้ 3 คอลัมน์มีผลรวมเท่ากับ 12 ตามเดิม<br><br>
-                <center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/00005.jpg"></center><br>
-จะเห็นว่าความกว้างของทั้ง 2 คอลัมน์นี้จะเป็น 8+4 = 12 พอดี การที่เราจําเป็นต้องกำหนดความกว้างให้รวมกันเท่ากับ 12 เพราะว่า grid system ของ bootstrap นั้นเป็นแบบ 12 แล้วเท่ากับว่า 2 
-คอลัมน์นี้จะเต็ม container พอดี
-Offsetting columns
-ในบางครั้ง ถ้าต้องการเพิ่มระยะห่างระหวางคอลัมน์ เราสามารถทําได้ด้วยการเพิ่ม class ที่ชื่อ
-“offset*” เข้าไป โดยจะหมายถึงจํานวนของคอลัมน์ที่จะกลายมาเป็ นระยะห่างดังนี้<br><br>
-<center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/0006.jpg"></center><br>
-เมื่อพรีวิวจะพบวาทั้้ง 2 คอลัมน์นี้ยังคงเต็ม container อย่เนื่องจาก 2 + 4 + 6 = 12
-Nesting columns<br><br>
-<center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/0007.jpg"></center><br>
-นอกจากนั้นยังสามารถสร้างคอลัมน์ซ้อนภายในคอลัมน์ได้ด้วยตามตัวอย่างนี้จะเห็นว่าได้สร้าง
-คอลัมน์“span2″ กับ “span6″ ซ้อนข้างในคอลัมน์ “span8″ ซึ่งคอลัมน์ที่อยูภายในทั้ง 2คอลัมน์จะเต็มคอลัมน์ข้างนอกพอดีเนื่องจาก2 + 6 = 8<br><br>
-<center><img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/0008.jpg"></center><br>
-
-
-        </h1>
-                
+      <b><h3> การใช้งาน Form </b><br></h3>
+      ตั้งค่าเริ่มต้น<br>
+      <img src="http://angsila.cs.buu.ac.th/~58660124/887371/lab03/99999999999999999.jpg"><br>
+      แบบฟอร์ม<br>
+      มีทั้งหมด3ประเภท: <br>
+      1.รูปแบบแนวตั้ง (นี้เป็นค่าเริ่มต้น)
+      <br> <div class=container> <h1><u>Vertical (basic) form</u></h1> <form> <div class=form-group> <label for=email>Email:</label> <input type=email class=form-control id=email placeholder="Enter email"> </div> <div class=form-group> <label for=pwd>Password:</label> <input type=password class=form-control id=pwd placeholder="Enter password"> </div> <div class=checkbox> <label><input type=checkbox> Remember me</label> </div> <button type=submit class="btn btn-default">Submit</button> </form> </div><br>
+      2.รูปแบบแนวนอน<br>
+      <div class=container> <h1><u>Horizontal form</u></h1> <form class=form-horizontal> <div class=form-group> <label class="control-label col-sm-1" for=email>Email:</label> <div class=col-sm-10> <input type=email class=form-control id=email placeholder="Enter email"> </div> </div> <div class=form-group> <label class="control-label col-sm-1" for=pwd>Password:</label> <div class=col-sm-10> <input type=password class=form-control id=pwd placeholder="Enter password"> </div> </div> <div class=form-group> <div class="col-sm-offset-2 col-sm-10"> <div class=checkbox> <label><input type=checkbox> Remember me</label> </div> </div> </div> <div class=form-group> <div class="col-sm-offset-2 col-sm-10"> <button type=submit class="btn btn-default">Submit</button> </div> </div> </form> </div>
+      3.รูปแบบInline form<br>
+      <div class=container> <h1><u>Inline form</u></h1><form class=form-inline> <div class=form-group> <label for=email>Email:</label> <input type=email class=form-control id=email placeholder="Enter email"> </div> <div class=form-group> <label for=pwd>Password:</label> <input type=password class=form-control id=pwd placeholder="Enter password"> </div> <div class=checkbox> <label><input type=checkbox> Remember me</label> </div> <button type=submit class="btn btn-default">Submit</button> </form>
+      </h1>
     </div>
   </div>
 </div>
 
 <footer class="container-fluid">
-  <p>จัดทำโดย นางสาว กชกร ทิพย์วงศ์เมฆ รหัสนิสิต 58660124 กลุ่ม 3401</p>
+  <h1><center>จัดทำโดย นางสาว กรกช ทิพย์วงศ์เมฆ รหัสนิสิต 58660124 กลุ่ม 3401</center></h1>
 </footer>
-
 </body>
 </html>
